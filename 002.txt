@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() // 02
+{
+    system("chcp 1251 > null");
+    long long int a, b, c;
+    printf("\t– Введите три натуральных числа\n\t");
+    scanf_s("%lld %lld %lld", &a, &b, &c);
+
+    if (a > b) {
+        if (a > c) {
+            printf("\t– Число %lld больше остальных\n\n", a);
+        }
+        else {
+            printf("\t– Число %lld больше остальных\n\n", c);
+        }
+    }
+    else {
+        if (b > c) {
+            printf("\t– Число %lld больше остальных\n\n", b);
+        }
+        else {
+            printf("\t– Число %lld больше остальных\n\n", c);
+        }
+    }
+    return 0;
+}
