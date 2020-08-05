@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() // 01
+{
+    system("chcp 1251 > null");
+    int a, first, second, square;
+    printf("\t– Введите возводимое на квадрат число оканчивающийся на 5\n\t");
+    scanf_s("%d", &a);
+    first = (a - 5) / 10;
+    second = first * (first + 1); 
+    square = second * 100 + 25;
+    printf("\t%d\n\n", square);
+    return 0;
+}
