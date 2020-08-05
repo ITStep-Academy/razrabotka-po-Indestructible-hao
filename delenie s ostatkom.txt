@@ -1,0 +1,13 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+int main() {
+	double a, b; 
+	system("chcp 1251 > null");
+	printf("\t– Введите число\n", );
+	scanf_s("%lf", &a);
+	b = (a / 10) % 10;
+	printf("%lf", b);
+	return 0;
+}
